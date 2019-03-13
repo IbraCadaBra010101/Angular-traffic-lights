@@ -1,0 +1,42 @@
+
+
+<div class="container">
+    <div id="trafficLight">
+         <div [ngClass]="red ? 'red' : 'off'"></div>
+        <div [ngClass]="yellow ? 'yellow' : 'off'"></div>
+        <div [ngClass]="green ? 'green' : 'off'" ></div>
+    </div>
+  <button class="drive-btn" (click)="ClickToDrive()">Drive</button>
+</div>
+
+
+<!--<p [ngClass]="condition ? 'checked' : 'unchecked'">-->
+<!--<h1 [class.gray]="h1Style">Home</h1>-->
+<!--ng-class="$even ? 'even-row' : 'odd-row'">-->
+<!--<div ng-class="alarm.accepted.value ? 'text-warning' : 'text-danger'">
+    ...
+</div>-->
+<!--<h1 [ngClass]="{
+  'gray': h1Style,
+  'large': !h1Style
+}">Home</h1>-->
+
+
+<!--Du ska simulera ett trafikljus. Från början
+ska den röda lampan lysa. När man klickar på
+"Nästa signal" (se mockup) så ska nästa lampa tändas:
+ rött → gult → grönt → rött. Syftet med uppgiften
+ är att visa att du förstått hur man använder
+ class properties och event functions
+ i kombination med template. Använd [className]="classProperty"
+ (eller ngClass, mer om det här) för att ange CSS-klass.-->
+
+<!--För VG ska trafikljuset vara mer realistiskt.
+Ett trafikljus har följande tillstånd:-->
+<!--röd lampa-->
+<!--röd och gul lampa samtidigt-->
+<!--grön lampa-->
+<!--gul lampa-->
+
+<!--Efter fjärde tillståndet går
+trafikljuset tillbaka till första igen.-->
